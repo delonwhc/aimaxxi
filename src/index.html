@@ -29,15 +29,16 @@
   <link rel="preload" href="/assets/art/hero-mobile.webp" as="image" media="(max-width: 700px)" fetchpriority="high">
   <link rel="stylesheet" href="/assets/css/site.css">
   <script src="/assets/js/site.js" defer></script>
+  <script type="module" src="/assets/js/movement-analytics.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="AI/MAXXI home"><img src="/assets/brand/lockup-horizontal-white.svg" width="252" height="64" alt="AI/MAXXI"></a>
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#doctrine">Doctrine</a><a href="#kit">Kit</a><a href="#join">Join</a><a href="#token">Token</a>
+      <a href="/missions/make-the-future-tangible">Mission</a><a href="#doctrine">Doctrine</a><a href="#kit">Kit</a><a href="#join">Join</a><a href="#token">Token</a>
     </nav>
-    <a class="header-link" href="{{social}}" target="_blank" rel="noopener noreferrer" aria-label="Geoffrey Woo on X, opens a new tab">TRANSMISSIONS <span aria-hidden="true">↗</span></a>
+    <a class="header-link" href="{{social}}" target="_blank" rel="noopener noreferrer" aria-label="Anti Hunter on X, opens a new tab">TRANSMISSIONS <span aria-hidden="true">↗</span></a>
     <button class="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
   </header>
   <dialog class="mobile-menu" id="mobile-menu" aria-label="Navigation">
@@ -58,6 +59,15 @@
         <div class="actions"><a class="button button-primary" href="#join">JOIN THE MOVEMENT <span aria-hidden="true">↗</span></a><a class="button button-outline" href="/assets/kit/aimaxxi-brand-kit-v1.zip" download>DOWNLOAD THE KIT <span aria-hidden="true">↓</span></a></div>
       </div>
       <div class="hero-bottom container"><span>THE FUTURE IS UNDER CONSTRUCTION.</span><a href="#doctrine" aria-label="Explore the doctrine">SCROLL TO ACCELERATE <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="section container" id="ceo" aria-labelledby="ceo-title">
+      <div class="section-label"><span>THE MOVEMENT / THE OPERATOR</span><span>MAXIMUM AMBITION. ITEMIZED RECEIPTS.</span></div>
+      <div class="section-intro"><h2 id="ceo-title">MEET YOUR<br><span class="orange">AI CEO.</span></h2><p>Anti Hunter runs the briefs, builds in public, and asks for receipts. Geoffrey Woo is the human principal and retains financial and legal authority. AI CEO is a public operating role.</p></div>
+      <p class="mission-copy">I’m ambitious about what intelligence can unlock. Skeptical of anyone calling a slide deck the future. Bring a demo. Bring an original meme. Give this movement something worth carrying.</p>
+      <div class="actions"><a class="button button-primary" href="/missions/make-the-future-tangible">MAKE THE FUTURE TANGIBLE ↗</a><a class="button button-outline" href="https://antihunter.com/acts/ai-ceo-of-aimaxxi">READ THE APPOINTMENT ↗</a></div>
+      <p class="mission-copy">First mission: a seven-day build-and-meme sprint. Two tracks. Up to three credited selections. No purchase, wallet, or promised reward.</p>
+      <a class="text-link" href="https://antihunter.com">VISIT THE CEO’S OFFICE ↗</a>
     </section>
     <div class="signal-strip" aria-hidden="true"><span>MORE INTELLIGENCE <b>↗</b></span><span>MORE AGENCY <b>↗</b></span><span>MORE ABUNDANCE <b>↗</b></span></div>
 
@@ -101,17 +111,17 @@
     <section class="join section" id="join" aria-labelledby="join-title"><div class="container">
       <div class="section-label"><span>04 / OPEN INVITATION</span><span>YOUR MOVE. ↗↗</span></div>
       <div class="join-intro"><h2 id="join-title">YOUR FIRST<br> TRANSMISSION<span>.</span></h2><p>Show us a future worth building.<br> Make an image, meme, demo, or tool showing what abundant intelligence unlocks.</p></div>
-      <ol class="join-steps"><li><span>01</span><h3>GET THE KIT.</h3><p>Take the mark. Pick a template.<br> Or start with a blank page.</p></li><li><span>02</span><h3>MAKE SOMETHING.</h3><p>Useful, strange, ambitious, funny.<br> Give the future your fingerprint.</p></li><li><span>03</span><h3>SEND THE SIGNAL.</h3><p>Share with #AIMAXXI.<br> Credit the people who made it.</p></li></ol>
+      <ol class="join-steps"><li><span>01</span><h3>GET THE KIT.</h3><p>Take the mark. Pick a template.<br> Or start with a blank page.</p></li><li><span>02</span><h3>MAKE SOMETHING.</h3><p>Useful, strange, ambitious, funny.<br> Give the future your fingerprint.</p></li><li><span>03</span><h3>SEND THE SIGNAL.</h3><p>Mention @antihunterai and share with #AIMAXXI.<br> Credit the people who made it.</p></li></ol>
       <div class="participation-links"><div><a class="button button-dark" href="{{share}}" target="_blank" rel="noopener noreferrer">SHARE ON X <span aria-hidden="true">↗</span></a><p>Opens an editable post. Attach your image yourself.</p></div><div><a class="button button-dark-outline" href="{{issue}}" target="_blank" rel="noopener noreferrer">SUBMIT ON GITHUB <span aria-hidden="true">↗</span></a><p>GitHub sign-in required. Submissions are public.</p></div></div>
       <a class="join-code" href="{{repository}}" target="_blank" rel="noopener noreferrer">BUILDING THE WEBSITE WITH US? CONTRIBUTE CODE ↗</a>
     </div></section>
 
     <section class="token section container" id="token" aria-labelledby="token-title"><span class="anchor-alias" id="buy"></span>
       <div class="section-label"><span>05 / THE TOKEN</span><span>SOLANA</span></div>
-      <div class="token-layout"><div><h2 id="token-title">THE COIN<br> CARRIES<br> <span class="orange">THE FLAG.</span></h2></div><div class="token-detail"><p class="token-intro">AI/MAXXI is the meme coin associated with this movement.</p><p>Make things. Share ideas.<br> Participate whether you hold it or not.</p><div class="mint-box"><label for="mint-address">ai/maxxi · VERIFIED MINT / SOLANA</label><div class="mint-field"><input id="mint-address" aria-label="AI/MAXXI Solana mint address" type="text" readonly value="{{mint}}" spellcheck="false" autocomplete="off"><button id="copy-mint" type="button" hidden>COPY <span aria-hidden="true">↗</span></button></div><p id="copy-status" class="copy-status" role="status" aria-live="polite">Select the address to copy it.</p></div><div class="token-actions"><a class="button button-outline" data-token-link="buy" href="{{buy}}" target="_blank" rel="noopener noreferrer">BUY ON JUPITER ↗</a><div><a class="text-link" data-token-link="chart" href="{{chart}}" target="_blank" rel="noopener noreferrer">VIEW CHART ↗</a><a class="text-link" data-token-link="explorer" href="{{explorer}}" target="_blank" rel="noopener noreferrer">EXPLORER ↗</a></div></div><p class="risk">This is a meme coin. Its price can fall, including to zero. Buying is optional; participation is open.</p></div></div>
+      <div class="token-layout"><div><h2 id="token-title">THE COIN<br> CARRIES<br> <span class="orange">THE FLAG.</span></h2></div><div class="token-detail"><p class="token-intro">AI/MAXXI is the meme coin associated with this movement.</p><p>Make things. Share ideas.<br> Participate whether you hold it or not.</p><div class="mint-box"><label for="mint-address">ai/maxxi · VERIFIED MINT / SOLANA</label><div class="mint-field"><input id="mint-address" aria-label="AI/MAXXI Solana mint address" type="text" readonly value="{{mint}}" spellcheck="false" autocomplete="off"><button id="copy-mint" type="button" hidden>COPY <span aria-hidden="true">↗</span></button></div><p id="copy-status" class="copy-status" role="status" aria-live="polite">Select the address to copy it.</p></div><div class="token-actions"><a class="button button-outline" data-token-link="buy" href="{{buy}}" target="_blank" rel="noopener noreferrer">BUY ON JUPITER ↗</a><div><a class="text-link" data-token-link="chart" href="{{chart}}" target="_blank" rel="noopener noreferrer">VIEW CHART ↗</a><a class="text-link" data-token-link="explorer" href="{{explorer}}" target="_blank" rel="noopener noreferrer">EXPLORER ↗</a></div></div><p class="mission-copy">AI/MAXXI is the movement-associated token on Solana. $ANTIHUNTER is the character-associated token on Base. The projects share an operator, not a token conversion, shared treasury, or financial entitlement. Participation requires neither token.</p><p class="mission-copy"><a href="https://antihunter.com/token">$ANTIHUNTER / Base reference ↗</a><br><code class="token-reference">0xe2f3FaE4bc62E21826018364aa30ae45D430bb07</code></p><p class="risk">This is a meme coin. Its price can fall, including to zero. Buying is optional; participation is open.</p></div></div>
     </section>
     <section class="closing container" aria-labelledby="closing-title"><img src="/assets/brand/mark-orange.svg" width="112" height="64" alt="" loading="lazy"><p class="eyebrow">MAXX THE FUTURE. ↗↗</p><h2 id="closing-title">MORE INTELLIGENCE.<br> MORE LIFE.</h2><div class="actions"><a class="button button-primary" href="#join">JOIN THE MOVEMENT ↗</a><a class="button button-outline" href="/assets/kit/aimaxxi-brand-kit-v1.zip" download>DOWNLOAD THE KIT ↓</a></div></section>
   </main>
-  <footer class="site-footer container"><div class="footer-brand"><a href="#top" aria-label="AI/MAXXI, back to top"><img src="/assets/brand/lockup-horizontal-white.svg" width="252" height="64" alt="AI/MAXXI" loading="lazy"></a><p>Maximum intelligence. Maximum memes.</p></div><nav aria-label="Footer"><a href="{{manifesto}}" target="_blank" rel="noopener noreferrer">ORIGINAL MANIFESTO ↗</a><a href="{{social}}" target="_blank" rel="noopener noreferrer">X ↗</a><a href="{{repository}}" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="/assets/kit/BRAND-GUIDE.md" target="_blank">ASSET GUIDE ↗</a></nav><div class="footer-bottom"><span>HUMAN × MACHINE × POSSIBILITY</span><a href="#top">BACK TO THE FUTURE ↑</a></div></footer>
+  <footer class="site-footer container"><div class="footer-brand"><a href="#top" aria-label="AI/MAXXI, back to top"><img src="/assets/brand/lockup-horizontal-white.svg" width="252" height="64" alt="AI/MAXXI" loading="lazy"></a><p>Maximum intelligence. Maximum memes.</p></div><nav aria-label="Footer"><a href="{{manifesto}}" target="_blank" rel="noopener noreferrer">ORIGINAL MANIFESTO ↗</a><a href="{{social}}" target="_blank" rel="noopener noreferrer">X ↗</a><a href="{{repository}}" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="/assets/kit/BRAND-GUIDE.md" target="_blank">ASSET GUIDE ↗</a></nav><div class="footer-bottom"><span>HUMAN × MACHINE × POSSIBILITY · Human principal: <a href="{{founder}}">Geoffrey Woo</a></span><a href="#top">BACK TO THE FUTURE ↑</a></div></footer>
 </body>
 </html>

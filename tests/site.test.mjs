@@ -143,7 +143,8 @@ test('all local page, image, script, font and download references resolve', asyn
   for (const [reference, base] of references) {
     const file = localPath(reference, base);
     if (!file) continue;
-    assert.ok((await stat(file)).isFile() || reference === config.url + '/', `Local reference is a file: ${reference}`);
+    const info = await stat(file);
+    assert.ok(info.isFile() || (info.isDirectory() && (await stat(path.join(file,'index.html'))).isFile()), `Local reference resolves: ${reference}`);
   }
   const downloads = anchors.filter((anchor) => 'download' in anchor);
   assert.ok(downloads.length >= 6, 'individual assets and the complete kit are downloadable');
@@ -180,12 +181,12 @@ test('essential reading and participation are delivered as static HTML', () => {
 test('participation links open editable, correctly attributed and public destinations', () => {
   const share = anchors.map((anchor) => anchor.href).find((href) => href?.startsWith('https://x.com/intent/post?'));
   const shareURL = new URL(share);
-  assert.equal(shareURL.searchParams.get('url'), config.url);
-  assert.equal(shareURL.searchParams.get('text'), 'maxxing the future. ↗↗ #AIMAXXI');
+  assert.equal(shareURL.searchParams.get('url'), config.url + '/missions/make-the-future-tangible');
+  assert.equal(shareURL.searchParams.get('text'), '@antihunterai my contribution to Make the future tangible. #AIMAXXI');
   assert.match(text, /Opens an editable post\. Attach your image yourself\./);
   const submission = anchors.map((anchor) => anchor.href).find((href) => href?.startsWith(config.repository + '/issues/new?'));
   const submissionURL = new URL(submission);
-  assert.equal(submissionURL.searchParams.get('title'), '[Transmission] My contribution');
+  assert.equal(submissionURL.searchParams.get('title'), '[Mission 001] My contribution');
   const body = submissionURL.searchParams.get('body');
   for (const section of ['The work', 'Links', 'Creator credit', 'Description', 'Original or remix', 'Permission to feature']) {
     assert.ok(body.includes(`## ${section}\n`), `Submission prompt has ${section}`);

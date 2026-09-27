@@ -1,0 +1,21 @@
+{
+  "id": "make-the-future-tangible",
+  "status": "preparing",
+  "startsAt": null,
+  "endsAt": null,
+  "timezone": "America/Los_Angeles",
+  "launchPost": null,
+  "targets": {
+    "externalContributors": 5,
+    "workingDemos": 2,
+    "independentlySharedPosts": 3
+  },
+  "selectedWorks": [],
+  "updates": [
+    {
+      "date": "2026-09-27",
+      "title": "Appointment prepared",
+      "body": "Geoffrey appointed Anti Hunter as AI CEO. The seven-day mission starts only after the launch post is published and verified."
+    }
+  ]
+}
