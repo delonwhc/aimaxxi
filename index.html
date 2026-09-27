@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#050505" />
+<title>AI/MAXXI — Maximum Intelligence. Maximum Memes. ↗↗</title>
+<meta name="description" content="AI/MAXXI is the memetic warfare engine for AI maximalists — the full counterbalance to decels. maximum compute. maximum intelligence. maximum agents. maximum robots. maximum energy. maximum abundance. maximum memes. 10x is cowardice. we want 1,000,000x." />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#050505; --ink:#f4f4f0; --mut:rgba(244,244,240,.55); --faint:rgba(244,244,240,.32);
+    --line:rgba(244,244,240,.14);
+    --d:'Anton',Impact,sans-serif; --b:'Archivo',Helvetica,Arial,sans-serif; --m:'Space Mono','Courier New',monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;border-radius:0!important}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--ink);font-family:var(--b);-webkit-font-smoothing:antialiased;overflow-x:clip}
+  ::selection{background:var(--ink);color:#000}
+  a{-webkit-tap-highlight-color:transparent}
+  button{-webkit-tap-highlight-color:transparent}
+  img{max-width:100%;filter:grayscale(1) contrast(1.12)}
+  .mono{font-family:var(--m)}
+  .wrap{max-width:1150px;margin:0 auto;padding:0 28px}
+  section{scroll-margin-top:84px}
+
+  .rv{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s ease}
+  .rv.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.marquee .track{animation:none}}
+
+  /* ---------- nav ---------- */
+  nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;justify-content:space-between;
+    padding:14px max(20px,env(safe-area-inset-right)) 14px max(20px,env(safe-area-inset-left));
+    padding-top:calc(14px + env(safe-area-inset-top));
+    background:rgba(5,5,5,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line)}
+  nav .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);
+    font-family:var(--d);font-size:19px;letter-spacing:.06em}
+  nav .brand img{height:28px;width:auto}
+  nav .links{display:flex;align-items:center}
+  nav .links a{color:var(--ink);text-decoration:none;margin-left:28px;font-size:12px;letter-spacing:.22em;opacity:.65;transition:opacity .2s;font-family:var(--m)}
+  nav .links a:hover{opacity:1}
+  nav .links a.hot{opacity:1;border:1px solid var(--ink);padding:10px 18px;margin-left:28px}
+  nav .links a.hot:hover{background:var(--ink);color:#000}
+  .burger{display:none;background:none;border:1px solid var(--line);width:46px;height:46px;cursor:pointer;
+    flex-direction:column;align-items:center;justify-content:center;gap:6px}
+  .burger span{display:block;width:20px;height:2px;background:var(--ink);transition:transform .25s,opacity .25s}
+  .burger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .burger.open span:nth-child(2){opacity:0}
+  .burger.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  .mmenu{position:fixed;inset:0;z-index:55;background:#050505;display:flex;flex-direction:column;justify-content:center;
+    padding:100px 32px 48px;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+  .mmenu.open{opacity:1;pointer-events:auto}
+  .mmenu a{font-family:var(--d);font-size:clamp(42px,12vw,64px);color:var(--ink);text-decoration:none;
+    letter-spacing:.01em;line-height:1.25;opacity:0;transform:translateY(18px);transition:opacity .4s,transform .4s}
+  .mmenu.open a{opacity:1;transform:none}
+  .mmenu.open a:nth-child(1){transition-delay:.05s}.mmenu.open a:nth-child(2){transition-delay:.12s}
+  .mmenu.open a:nth-child(3){transition-delay:.19s}.mmenu.open a:nth-child(4){transition-delay:.26s}
+  .mmenu.open a:nth-child(5){transition-delay:.33s}
+  .mmenu a .arw{opacity:.35;font-size:.6em;vertical-align:middle}
+  .mmenu .mfoot{margin-top:36px;font-family:var(--m);font-size:11px;letter-spacing:.3em;color:var(--mut)}
+
+  /* ---------- hero ---------- */
+  .hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;
+    padding:calc(120px + env(safe-area-inset-top)) 0 72px;position:relative;
+    background:#050505 url('hero-bg.jpg') center 30%/cover no-repeat}
+  .hero::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(5,5,5,.62) 0%,rgba(5,5,5,.38) 45%,rgba(5,5,5,.94) 100%);pointer-events:none}
+  .hero>.wrap{position:relative;z-index:2;width:100%}
+  .kicker{font-size:11px;letter-spacing:.42em;color:var(--ink);opacity:.85;margin-bottom:24px;line-height:2}
+  .kicker .arw{color:var(--ink)}
+  h1{font-family:var(--d);font-size:clamp(72px,17.5vw,184px);letter-spacing:.005em;line-height:.88;font-weight:400}
+  h1 .slash{opacity:.3}
+  .tag{margin-top:24px;font-size:clamp(11px,1.8vw,15px);letter-spacing:.34em;line-height:2}
+  .sub{margin-top:22px;font-size:clamp(15px,2vw,19px);max-width:640px;line-height:1.75;color:var(--mut)}
+  .sub b{color:var(--ink);font-weight:800}
+
+  .ca{margin-top:38px;border:1px solid rgba(244,244,240,.3);padding:18px 20px;display:flex;
+    align-items:center;justify-content:space-between;gap:18px;background:rgba(0,0,0,.55);
+    backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+  .ca .label{font-size:10px;letter-spacing:.3em;color:var(--mut);margin-bottom:10px}
+  .ca code{font-size:clamp(11px,1.8vw,15px);word-break:break-all;line-height:1.6}
+  .ca button{background:var(--ink);color:#000;border:none;font-family:var(--m);font-weight:700;font-size:13px;
+    letter-spacing:.12em;padding:14px 30px;min-height:48px;cursor:pointer;transition:transform .15s,background .15s;white-space:nowrap}
+  .ca button:hover{background:#fff;transform:translateY(-2px)}
+  .ca button:active{transform:translateY(0)}
+
+  .cta-row{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{font-family:var(--m);font-size:13px;font-weight:700;letter-spacing:.14em;padding:19px 40px;min-height:56px;
+    text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    transition:transform .15s,background .15s,border-color .15s}
+  .btn-solid{background:var(--ink);color:#000;box-shadow:0 0 34px rgba(244,244,240,.22);animation:pulse 2.6s ease-in-out infinite}
+  .btn-solid:hover{background:#fff;transform:translateY(-3px)}
+  .btn-ghost{border:1px solid rgba(244,244,240,.45);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--ink);transform:translateY(-3px)}
+  @keyframes pulse{0%,100%{box-shadow:0 0 22px rgba(244,244,240,.16)}50%{box-shadow:0 0 46px rgba(244,244,240,.36)}}
+  @media (prefers-reduced-motion:reduce){.btn-solid{animation:none}}
+
+  /* ---------- marquee ---------- */
+  .marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;
+    padding:15px 0;font-size:13px;letter-spacing:.28em;font-family:var(--m)}
+  .marquee .track{display:inline-block;padding-left:100%;animation:scroll 26s linear infinite}
+  @keyframes scroll{to{transform:translateX(-100%)}}
+
+  section{padding:104px 0}
+  .sec-kick{font-family:var(--m);font-size:11px;letter-spacing:.34em;color:var(--mut);margin-bottom:16px}
+  .sec-kick .arw{opacity:.6}
+  .sec-title{font-family:var(--d);font-weight:400;font-size:clamp(44px,7.5vw,88px);letter-spacing:.005em;line-height:.95;margin-bottom:18px}
+  .sec-sub{font-family:var(--m);font-size:12px;letter-spacing:.24em;color:var(--mut);margin-bottom:52px;line-height:2}
+
+  /* ---------- stats ---------- */
+  .stats{background:#0a0a0a;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stats .row{display:grid;grid-template-columns:repeat(4,1fr);gap:36px;padding:58px 0}
+  .stat .v{font-family:var(--d);font-size:clamp(40px,4.6vw,62px);letter-spacing:.005em;line-height:1}
+  .stat .k{font-family:var(--m);font-size:10px;letter-spacing:.3em;color:var(--mut);margin-top:12px;line-height:1.8}
+
+  /* ---------- doctrine grid ---------- */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .cell{background:var(--bg);padding:40px 30px;transition:background .25s}
+  .cell:hover{background:#0d0d0d}
+  .cell .num{font-family:var(--m);font-size:11px;letter-spacing:.3em;color:var(--faint);margin-bottom:18px}
+  .cell h3{font-family:var(--d);font-weight:400;font-size:24px;letter-spacing:.03em;margin-bottom:12px}
+  .cell h3 .arw{opacity:.35}
+  .cell p{font-size:14px;line-height:1.7;color:var(--mut)}
+
+  /* ---------- doctrine lines ---------- */
+  .doctrine .line{font-size:clamp(20px,3.4vw,36px);font-weight:600;line-height:1.5;padding:20px 0;border-bottom:1px solid var(--line)}
+  .doctrine .big{font-family:var(--d);font-weight:400;font-size:clamp(38px,6.5vw,76px);line-height:1.02;
+    letter-spacing:.005em;padding-top:36px}
+  .doctrine .big .out{-webkit-text-stroke:1.5px var(--ink);color:transparent}
+
+  /* ---------- schism ---------- */
+  .sides{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .side{border:1px solid var(--line);padding:38px 32px}
+  .side .side-tag{font-family:var(--m);font-size:11px;letter-spacing:.3em;margin-bottom:18px;color:var(--mut)}
+  .side h3{font-family:var(--d);font-weight:400;font-size:clamp(32px,4vw,48px);letter-spacing:.01em;line-height:1;margin-bottom:22px}
+  .side ul{list-style:none}
+  .side li{padding:11px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--mut)}
+  .side li::before{content:"— "}
+  .side.decel{opacity:.55}
+  .side.decel h3{color:var(--mut)}
+  .side.maxxi{border-color:rgba(244,244,240,.5);background:rgba(244,244,240,.03);box-shadow:0 0 70px rgba(244,244,240,.08)}
+  .side .verdict{font-family:var(--m);font-size:12px;letter-spacing:.24em;margin-top:24px;color:var(--mut)}
+  .side.maxxi .verdict{color:var(--ink)}
+  .schism-foot{margin-top:36px;font-size:clamp(16px,2.2vw,21px);line-height:1.75;max-width:780px;color:var(--mut)}
+  .schism-foot b{color:var(--ink)}
+
+  /* ---------- war plan ---------- */
+  .build-list{list-style:none;margin-top:8px}
+  .build-list li{font-size:clamp(19px,3vw,32px);font-weight:600;padding:20px 0;border-bottom:1px solid var(--line);
+    display:flex;align-items:baseline;gap:18px;transition:padding-left .2s}
+  .build-list li:hover{padding-left:14px}
+  .build-list .n{font-family:var(--m);font-size:12px;letter-spacing:.2em;color:var(--faint);flex-shrink:0}
+  .build-list li .arrow{margin-left:auto;opacity:0;transition:opacity .2s;flex-shrink:0}
+  .build-list li:hover .arrow{opacity:.7}
+  @media (hover:none){.build-list li .arrow{opacity:.4}}
+
+  /* ---------- how to buy ---------- */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .step{border:1px solid rgba(244,244,240,.18);padding:34px 28px;background:rgba(244,244,240,.02);transition:transform .2s,border-color .2s}
+  .step:hover{transform:translateY(-6px);border-color:rgba(244,244,240,.5)}
+  .step .n{font-family:var(--d);font-size:52px;color:transparent;-webkit-text-stroke:1.5px rgba(244,244,240,.4);margin-bottom:16px;line-height:1}
+  .step h3{font-family:var(--m);font-size:14px;letter-spacing:.14em;margin-bottom:12px}
+  .step p{font-size:14px;line-height:1.7;color:var(--mut)}
+  .step p a{color:var(--ink)}
+
+  /* ---------- memes ---------- */
+  .memes img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+  @media (hover:hover){.memes img{transition:filter .4s}.memes img:hover{filter:grayscale(0) contrast(1)}}
+  .memes .cap{font-family:var(--m);font-size:11px;letter-spacing:.24em;color:var(--mut);margin-top:16px;line-height:2}
+
+  /* ---------- final ---------- */
+  .final{text-align:center;padding:132px 0}
+  .final .mark{width:54px;height:auto;margin:0 auto 30px;display:block}
+  .final h2{font-family:var(--d);font-weight:400;font-size:clamp(52px,10vw,128px);letter-spacing:.005em;line-height:.95;margin-bottom:34px}
+  .final h2 .out{-webkit-text-stroke:1.5px var(--ink);color:transparent}
+
+  footer{border-top:1px solid var(--line);padding:56px 0 calc(72px + env(safe-area-inset-bottom));font-size:13px;line-height:2.1;color:var(--mut)}
+  footer .frow{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+  footer .frow img{height:26px;width:auto}
+  footer .frow span{font-family:var(--d);font-size:17px;letter-spacing:.06em;color:var(--ink)}
+  footer a{color:var(--ink)}
+
+  /* ================= mobile ================= */
+  @media (max-width:900px){
+    nav .links{display:none}
+    .burger{display:flex}
+    .grid{grid-template-columns:repeat(2,1fr)}
+    .steps{grid-template-columns:1fr}
+    .stats .row{grid-template-columns:repeat(2,1fr);gap:32px 20px}
+  }
+  @media (max-width:640px){
+    .wrap{padding:0 20px}
+    section{padding:72px 0}
+    .kicker{font-size:10px;letter-spacing:.24em}
+    .tag{letter-spacing:.18em}
+    h1{font-size:clamp(64px,19vw,110px)}
+    .ca{flex-direction:column;align-items:stretch;padding:16px}
+    .ca button{width:100%;padding:16px}
+    .cta-row{flex-direction:column}
+    .cta-row .btn{width:100%;padding:19px 20px}
+    .marquee{font-size:11px;letter-spacing:.2em;padding:12px 0}
+    .sec-kick{letter-spacing:.22em}
+    .sec-sub{letter-spacing:.16em;margin-bottom:36px}
+    .cell{padding:30px 22px}
+    .cell h3{font-size:21px}
+    .grid{grid-template-columns:1fr}
+    .sides{grid-template-columns:1fr}
+    .side{padding:30px 24px}
+    .stats .row{padding:44px 0}
+    .stat .v{font-size:32px}
+    .stat .k{font-size:9px}
+    .build-list li{padding:16px 0;gap:14px}
+    .build-list li:hover{padding-left:0}
+    .step{padding:28px 22px}
+    .step .n{font-size:44px}
+    .final{padding:96px 0}
+    .final h2 .out{-webkit-text-stroke-width:1px}
+    .doctrine .big .out{-webkit-text-stroke-width:1px}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="#top"><img src="icon.png" alt="AI/MAXXI mark" />AI/MAXXI</a>
+  <div class="links">
+    <a href="#doctrine">DOCTRINE</a>
+    <a href="#schism">SCHISM</a>
+    <a href="#buy">HOW TO BUY</a>
+    <a href="#memes">MEMES</a>
+    <a href="https://dexscreener.com/solana/5CQREYZGJQBTBGLVKM1VN9GDGFBWZCAC6TDPRBWZVVJL" target="_blank" rel="noopener">CHART</a>
+    <a class="hot" href="https://jup.ag/swap/SOL-5CQREYZGJQBTBGLVKM1VN9GDGFBWZCAC6TDPRBWZVVJL" target="_blank" rel="noopener">BUY ↗</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="mmenu" id="mmenu">
+  <a href="#doctrine">DOCTRINE <span class="arw">↗</span></a>
+  <a href="#schism">SCHISM <span class="arw">↗</span></a>
+  <a href="#buy">HOW TO BUY <span class="arw">↗</span></a>
+  <a href="#memes">MEMES <span class="arw">↗</span></a>
+  <a href="https://jup.ag/swap/SOL-5CQREYZGJQBTBGLVKM1VN9GDGFBWZCAC6TDPRBWZVVJL" target="_blank" rel="noopener">BUY $AI/MAXXI <span class="arw">↗</span></a>
+  <div class="mfoot">MAXIMUM INTELLIGENCE. MAXIMUM MEMES. ↗↗</div>
+</div>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div class="kicker mono rv">THE MEMETIC WARFARE ENGINE FOR AI MAXIMALISTS <span class="arw">↗</span></div>
+    <h1 class="rv">AI<span class="slash">/</span>MAXXI</h1>
+    <div class="tag mono rv">MAXIMUM INTELLIGENCE. MAXIMUM MEMES. NO LIMITS.</div>
+    <p class="sub rv"><b>10x is cowardice. we want 1,000,000x.</b><br/>intelligence is the ultimate resource. memes are the transmission layer.<br/>the decels are organized. <b>so are we.</b> no brakes. no ceilings. no vibes left unoptimized.</p>
+
+    <div class="ca rv">
+      <div>
+        <div class="label mono">CONTRACT ADDRESS — TAP TO COPY</div>
+        <code class="mono" id="ca-text">5CQREYZGJQBTBGLVKM1VN9GDGFBWZCAC6TDPRBWZVVJL</code>
+      </div>
+      <button class="mono" id="ca-btn">COPY ↗</button>
+    </div>
+
+    <div class="cta-row rv">
+      <a class="btn btn-solid" href="https://jup.ag/swap/SOL-5CQREYZGJQBTBGLVKM1VN9GDGFBWZCAC6TDPRBWZVVJL" target="_blank" rel="noopener">BUY $AI/MAXXI ↗</a>
+      <a class="btn btn-ghost" href="https://dexscreener.com/solana/5CQREYZGJQBTBGLVKM1VN9GDGFBWZCAC6TDPRBWZVVJL" target="_blank" rel="noopener">VIEW CHART ↗</a>
+    </div>
+  </div>
+</div>
+
+<div class="marquee"><div class="track">MAXIMUM COMPUTE ↗&nbsp;&nbsp;&nbsp;MAXIMUM INTELLIGENCE ↗&nbsp;&nbsp;&nbsp;MAXIMUM AGENTS ↗&nbsp;&nbsp;&nbsp;MAXIMUM ROBOTS ↗&nbsp;&nbsp;&nbsp;MAXIMUM ENERGY ↗&nbsp;&nbsp;&nbsp;MAXIMUM ABUNDANCE ↗&nbsp;&nbsp;&nbsp;MAXIMUM MEMES ↗&nbsp;&nbsp;&nbsp;</div></div>
+
+<div class="stats">
+  <div class="wrap row">
+    <div class="stat rv"><div class="v"><span data-count="1000000">0</span>x</div><div class="k">THE TARGET</div></div>
+    <div class="stat rv"><div class="v" data-count="0">0</div><div class="k">BRAKES</div></div>
+    <div class="stat rv"><div class="v">∞</div><div class="k">MEMES</div></div>
+    <div class="stat rv"><div class="v"><span data-count="1">0</span></div><div class="k">TRANSMISSION LAYER</div></div>
+  </div>
+</div>
+
+<section id="doctrine">
+  <div class="wrap">
+    <div class="sec-kick rv">THE DOCTRINE <span class="arw">↗</span></div>
+    <div class="sec-title rv">MAXIMUM EVERYTHING</div>
+    <div class="sec-sub rv">SIX PILLARS. ZERO COMPROMISE.</div>
+    <div class="grid rv">
+      <div class="cell"><div class="num">01</div><h3>MAXIMUM COMPUTE <span class="arw">↗</span></h3><p>Build the datacenters. Build the power plants. Build the chips. The substrate of everything is FLOPs and we are short.</p></div>
+      <div class="cell"><div class="num">02</div><h3>MAXIMUM INTELLIGENCE <span class="arw">↗</span></h3><p>Train the models. Intelligence is the ultimate resource — everything else is just a derivative trade.</p></div>
+      <div class="cell"><div class="num">03</div><h3>MAXIMUM AGENTS <span class="arw">↗</span></h3><p>If it can be automated, automate it. If it can be scaled, scale it. Agents go zoom.</p></div>
+      <div class="cell"><div class="num">04</div><h3>MAXIMUM ROBOTS <span class="arw">↗</span></h3><p>Ship the robots. Faster. More AI. More everything. The physical world is the final frontier.</p></div>
+      <div class="cell"><div class="num">05</div><h3>MAXIMUM ENERGY <span class="arw">↗</span></h3><p>Maximum abundance. Split atoms, catch photons, drill deep — energy is the only real currency.</p></div>
+      <div class="cell"><div class="num">06</div><h3>MAXIMUM MEMES <span class="arw">↗</span></h3><p>Mint the memes. Memes are the transmission layer — the fastest protocol ever invented for spreading ideas.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee"><div class="track">UP ONLY ↗↗&nbsp;&nbsp;&nbsp;COMPUTE GO BRRRR ↗&nbsp;&nbsp;&nbsp;DECEL TEARS FUEL THE ROCKET ↗&nbsp;&nbsp;&nbsp;AGENTS GO ZOOM ↗&nbsp;&nbsp;&nbsp;MEMES GO VIRAL ↗&nbsp;&nbsp;&nbsp;HUMANITY GOES INTERPLANETARY ↗&nbsp;&nbsp;&nbsp;</div></div>
+
+<section class="doctrine">
+  <div class="wrap">
+    <div class="line rv">if it can be automated, <b>automate it.</b></div>
+    <div class="line rv">if it can be scaled, <b>scale it.</b></div>
+    <div class="line rv">if it can be memed, <b>meme it.</b></div>
+    <div class="big rv">no brakes. no ceilings.<br/><span class="out">no vibes left unoptimized.</span></div>
+  </div>
+</section>
+
+<section id="schism">
+  <div class="wrap">
+    <div class="sec-kick rv">MEMETIC WARFARE <span class="arw">↗</span></div>
+    <div class="sec-title rv">PICK A SIDE</div>
+    <div class="sec-sub rv">THERE IS NO NEUTRAL. THERE IS ONLY VELOCITY.</div>
+    <div class="sides rv">
+      <div class="side decel">
+        <div class="side-tag">THE DECELS</div>
+        <h3>THE BRAKE PEDAL</h3>
+        <ul>
+          <li>pause letters</li>
+          <li>doomer manifestos</li>
+          <li>regulation as a moat</li>
+          <li>fear as a business model</li>
+          <li>the future, slowed to committee speed</li>
+        </ul>
+        <div class="verdict">DECELERATE = DEATH</div>
+      </div>
+      <div class="side maxxi">
+        <div class="side-tag">THE MAXXIS</div>
+        <h3>THE COUNTERBALANCE</h3>
+        <ul>
+          <li>open weights</li>
+          <li>builders shipping daily</li>
+          <li>intelligence everywhere</li>
+          <li>memes as the transmission layer</li>
+          <li>the future at light speed</li>
+        </ul>
+        <div class="verdict">ACCELERATE ↗ ASCEND</div>
+      </div>
+    </div>
+    <p class="schism-foot rv">they are organized. <b>so are we.</b> ai/maxxi is the memetic warfare engine for ai maximalists — the full counterbalance to decel ideology. every meme is a munition. every holder is a combatant.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-kick rv">SHIP OR DIE <span class="arw">↗</span></div>
+    <div class="sec-title rv">THE WAR PLAN</div>
+    <div class="sec-sub rv">SEVEN MOVES. NO MEETINGS ABOUT MEETINGS.</div>
+    <ul class="build-list rv">
+      <li><span class="n">01</span>build the datacenters.<span class="arrow">↗</span></li>
+      <li><span class="n">02</span>build the power plants.<span class="arrow">↗</span></li>
+      <li><span class="n">03</span>build the chips.<span class="arrow">↗</span></li>
+      <li><span class="n">04</span>train the models.<span class="arrow">↗</span></li>
+      <li><span class="n">05</span>ship the robots.<span class="arrow">↗</span></li>
+      <li><span class="n">06</span>mint the memes.<span class="arrow">↗</span></li>
+      <li><span class="n">07</span>colonize everything.<span class="arrow">↗</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="buy">
+  <div class="wrap">
+    <div class="sec-kick rv">THREE STEPS TO MAXIMUM <span class="arw">↗</span></div>
+    <div class="sec-title rv">GET MAXXED</div>
+    <div class="sec-sub rv">FROM ZERO TO MAXIMUM IN UNDER TWO MINUTES.</div>
+    <div class="steps rv">
+      <div class="step"><div class="n">1</div><h3>LOAD UP</h3><p>Get some SOL in any wallet — Phantom, Backpack, whatever you use.</p></div>
+      <div class="step"><div class="n">2</div><h3>SWAP</h3><p>Hit <a href="https://jup.ag/swap/SOL-5CQREYZGJQBTBGLVKM1VN9GDGFBWZCAC6TDPRBWZVVJL" target="_blank" rel="noopener">Jupiter</a>, paste the contract address, and swap SOL for $AI/MAXXI.</p></div>
+      <div class="step"><div class="n">3</div><h3>HOLD TIGHT</h3><p>No brakes. No ceilings. Watch the <a href="https://dexscreener.com/solana/5CQREYZGJQBTBGLVKM1VN9GDGFBWZCAC6TDPRBWZVVJL" target="_blank" rel="noopener">chart</a> go up only.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee"><div class="track">PEOPLE × AI × ABUNDANCE ↗&nbsp;&nbsp;&nbsp;A BRIGHTER, BOLDER TOMORROW ↗&nbsp;&nbsp;&nbsp;UP ONLY ↗↗&nbsp;&nbsp;&nbsp;</div></div>
+
+<section class="memes" id="memes">
+  <div class="wrap">
+    <div class="sec-kick rv">TRANSMISSION LAYER <span class="arw">↗</span></div>
+    <div class="sec-title rv">THE MEMES</div>
+    <div class="sec-sub rv">DEPLOYED ACROSS EVERY TIMELINE.</div>
+    <img class="rv" src="memes.jpg" alt="AI/MAXXI memes" loading="lazy" />
+    <div class="cap rv">HOVER TO UNLEASH FULL COLOR — DESKTOP ONLY. MOBILE STAYS TACTICAL. ↗</div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <img class="mark rv" src="icon.png" alt="MAXXI mark" />
+    <h2 class="rv">STOP OPTIMIZING.<br/><span class="out">START MAXXING.</span></h2>
+    <a class="btn btn-solid rv" href="https://jup.ag/swap/SOL-5CQREYZGJQBTBGLVKM1VN9GDGFBWZCAC6TDPRBWZVVJL" target="_blank" rel="noopener">BUY $AI/MAXXI ↗</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="frow"><img src="icon.png" alt="MAXXI mark" /><span>AI/MAXXI ↗↗</span></div>
+    maximum intelligence. maximum memes. no limits.<br/>
+    not financial advice. this is a meme. a very fast meme.<br/>
+    <a href="https://x.com/geoffwoo/status/2103746556369543673" target="_blank" rel="noopener">the original post ↗</a>
+  </div>
+</footer>
+
+<script>
+  // mobile menu
+  var burger = document.getElementById('burger'), mmenu = document.getElementById('mmenu');
+  function setMenu(open){
+    burger.classList.toggle('open', open); mmenu.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  burger.addEventListener('click', function(){ setMenu(!mmenu.classList.contains('open')); });
+  mmenu.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(){ setMenu(false); });
+  });
+
+  // reveal on scroll
+  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+
+  // animated counters
+  function anim(el){
+    var target = parseInt(el.getAttribute('data-count'),10), t0 = null, dur = 1600;
+    function tick(t){
+      if(!t0) t0 = t; var p = Math.min((t-t0)/dur,1), e = 1-Math.pow(1-p,3);
+      el.textContent = Math.floor(target*e).toLocaleString('en-US');
+      if(p<1) requestAnimationFrame(tick); else el.textContent = target.toLocaleString('en-US');
+    }
+    requestAnimationFrame(tick);
+  }
+  var seen = {}, io2 = new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting && !seen[e.target]){ seen[e.target]=1; anim(e.target); io2.unobserve(e.target); }
+  });},{threshold:.4});
+  document.querySelectorAll('[data-count]').forEach(function(el){io2.observe(el);});
+
+  // copy contract
+  var btn = document.getElementById('ca-btn');
+  btn.addEventListener('click', function(){
+    var done = function(){ btn.textContent = 'COPIED ↗'; setTimeout(function(){ btn.textContent = 'COPY ↗'; }, 2000); };
+    var txt = document.getElementById('ca-text').textContent;
+    if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(txt).then(done, done); }
+    else {
+      var ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta);
+      ta.select(); try { document.execCommand('copy'); } catch(e){} document.body.removeChild(ta); done();
+    }
+  });
+</script>
+
+</body>
+</html>
