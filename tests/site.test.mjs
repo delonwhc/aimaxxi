@@ -102,7 +102,7 @@ test('mint display and every token destination preserve the canonical Solana add
   assert.equal(input?.value, config.mint);
   assert.ok('readonly' in input, 'mint stays selectable without JavaScript');
   const destinations = {
-    buy: `https://jup.ag/swap/SOL-${config.mint}`,
+    buy: `https://jup.ag/swap?buy=${config.mint}&sell=So11111111111111111111111111111111111111112`,
     chart: `https://dexscreener.com/solana/${config.mint}`,
     explorer: `https://solscan.io/token/${config.mint}`,
   };

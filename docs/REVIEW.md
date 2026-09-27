@@ -23,6 +23,8 @@ This release rebuilds the movement's public entrance with a refined paired-arrow
 - Supporting steel text contrast is 6.56:1 on graphite and 6.08:1 on the secondary panel; orange/graphite is 6.36:1.
 - All local links, legacy anchors, font/image references, advertised export dimensions and kit archive contents checked.
 - X opens the intended editable text and URL. GitHub preserves the prefilled issue through its sign-in redirect. No post or issue submitted.
+- Jupiter’s current query-based swap link was verified to select `ai/maxxi` by its exact mint. The legacy `/swap/SOL-mint` route falls back to USDC and is not used.
+- Solscan and Dexscreener URLs preserve the mint; their destination pages presented anti-bot verification in this browser, so their rendered token views could not be checked.
 - No page JavaScript errors observed.
 
 The authenticated GitHub issue editor itself was not submitted or exercised past sign-in. Token destinations are external services; the site never connects a wallet or executes a transaction.

@@ -13,7 +13,7 @@ share.searchParams.set('text', 'maxxing the future. ↗↗ #AIMAXXI');
 share.searchParams.set('url', config.url);
 const values = {
   ...config,
-  buy: `https://jup.ag/swap/SOL-${config.mint}`,
+  buy: `https://jup.ag/swap?buy=${config.mint}&sell=So11111111111111111111111111111111111111112`,
   chart: `https://dexscreener.com/solana/${config.mint}`,
   explorer: `https://solscan.io/token/${config.mint}`,
   issue: issue.href,
