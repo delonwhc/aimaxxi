@@ -5,3 +5,16 @@ dist/
 AI-MAXXI-BRAND-AND-MOVEMENT-PLAN.md
 /research/
 __pycache__/
+
+# Local credentials never belong in this public repository.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+auth.json
+credentials.json
+node_modules/
+.venv/

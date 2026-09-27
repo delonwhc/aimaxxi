@@ -52,11 +52,15 @@ Change it only in `site.config.json`; the build derives the display, metadata an
 
 ## Preview and release
 
-Use the existing Vercel Git integration. Push a feature branch and review its Preview deployment and PR. `vercel.json` builds the static `dist/` output. Do not promote or merge until the preview has been reviewed. A merge to the production branch can publish to aimaxxi.com.
+Use the existing Vercel Git integration. Push a feature branch and review its Preview deployment and PR. `vercel.json` builds the static `dist/` output and runs every test before deployment. Do not promote or merge until the preview has been reviewed. A merge to the production branch can publish to aimaxxi.com.
 
-The legacy `deploy.py` has a hardcoded source directory and an incomplete file list. It is excluded from the deployment path and must not be used for this release. Private local strategy/research documents are ignored and excluded from the published tree. Existing meme-generator and enlistment-card PRs are independent work, not part of this release.
+The obsolete manual production uploader has been removed. Deploy through the Git integration; no deployment token is required by this repository. Private local strategy/research documents are ignored and excluded from the published tree. Existing meme-generator and enlistment-card PRs are independent work, not part of this release.
 
 Before a production release, record the current production deployment; retain it for rollback. After promotion, verify the live domain, full kit, exact mint, metadata and main participation links. Roll back through the Vercel deployment history if those checks fail.
+
+## Security
+
+See [SECURITY.md](SECURITY.md) for the threat model, browser policy, credential handling, and private vulnerability reporting. A public deployment URL or project ID is not an upload credential. Deploy-hook URLs and API tokens are secrets.
 
 ## Links
 
