@@ -4,3 +4,13 @@ research
 AI-MAXXI-BRAND-AND-MOVEMENT-PLAN.md
 assets/art/source
 deploy.py
+
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+auth.json
+credentials.json
+docs

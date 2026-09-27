@@ -1,10 +1,19 @@
-import { readFile, writeFile, mkdir, rm, cp, access } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rm } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { publishAssets, publishRegularFile, validateHttpsURL } from './security.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(await readFile(path.join(root, 'site.config.json'), 'utf8'));
 const mission = JSON.parse(await readFile(path.join(root, 'src/mission.json'), 'utf8'));
+const publicAssets = JSON.parse(await readFile(path.join(root, 'scripts/public-assets.json'), 'utf8'));
+for (const field of ['url', 'repository', 'social', 'manifesto', 'founder']) validateHttpsURL(config[field], field);
+if (mission.launchPost) validateHttpsURL(mission.launchPost, 'Mission launch post');
+if (mission.startsAt && !mission.launchPost) throw new Error('Mission dates require a launch URL');
+for (const work of mission.selectedWorks) {
+  validateHttpsURL(work.url, 'Selected work');
+  validateHttpsURL(work.creditUrl, 'Creator credit');
+}
 const escapeHTML = (value) => String(value).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const issue = new URL(`${config.repository}/issues/new`);
 issue.searchParams.set('title', '[Mission 001] My contribution');
@@ -31,14 +40,9 @@ const dist = path.join(root, 'dist');
 await rm(dist, { recursive: true, force: true });
 await mkdir(dist, { recursive: true });
 for (const file of ['index.html', 'icon.png', 'favicon.png', 'lockup.png', 'hero-bg.jpg', 'memes.jpg']) {
-  await access(path.join(root, file));
-  await cp(path.join(root, file), path.join(dist, file));
+  await publishRegularFile(root, dist, file);
 }
-// An allowlisted publish tree keeps private planning and raw production files off the site.
-await cp(path.join(root, 'assets'), path.join(dist, 'assets'), {
-  recursive: true,
-  filter: (sourcePath) => !sourcePath.split(path.sep).includes('source') && !sourcePath.endsWith('.DS_Store')
-});
+await publishAssets(root, dist, publicAssets);
 await writeFile(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${config.url}/sitemap.xml\n`);
 await writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${config.url}/</loc></url></urlset>\n`);
 console.log('Built static site in dist/. No server or runtime dependencies.');
