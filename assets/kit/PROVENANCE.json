@@ -1,0 +1,88 @@
+{
+  "version": "1",
+  "created": "2026-09-27",
+  "project": "AI/MAXXI",
+  "identity": {
+    "source": "Existing AI/MAXXI paired-arrow mark, redrawn as deterministic vector geometry. Wordmark outlined from Anton.",
+    "master": "assets/brand/mark-white.svg",
+    "display_type": "Anton"
+  },
+  "art": [
+    {
+      "name": "hero",
+      "source": "assets/art/source/hero.png",
+      "sha256": "f9614bfd2699fea5252e6143ae3be4758b14c3f6f5dfd5d8e15bbacbc8c9ea02",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "kind": "AI-generated original fictional scene",
+      "source_in_public_kit": false
+    },
+    {
+      "name": "power",
+      "source": "assets/art/source/power.png",
+      "sha256": "4e03d9b5becf233932d2c17e311d601de5bce37409b66ee77bedab5b8577a5f9",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "kind": "AI-generated original fictional scene",
+      "source_in_public_kit": false
+    },
+    {
+      "name": "night-shift",
+      "source": "assets/art/source/night-shift.png",
+      "sha256": "f6090d5412d71c1e9e999f29c904aa9f37fe6845d1df6a261204c657d26a59b4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "kind": "AI-generated original fictional scene",
+      "source_in_public_kit": false
+    },
+    {
+      "name": "transmission",
+      "source": "assets/art/source/transmission.png",
+      "sha256": "6df9034028b07078989b8917da9ace1f9a6d46d609973d827e6437d5afd5dacd",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "kind": "AI-generated original fictional scene",
+      "source_in_public_kit": false
+    }
+  ],
+  "fonts": [
+    {
+      "family": "anton",
+      "source": "https://github.com/google/fonts/tree/main/ofl/anton",
+      "filename": "Anton-Regular.ttf",
+      "license": "anton-OFL.txt",
+      "sha256": "a4ba3a92350ebb031da0cb47630ac49eb265082ca1bc0450442f4a83ab947cab"
+    },
+    {
+      "family": "archivo",
+      "source": "https://github.com/google/fonts/tree/main/ofl/archivo",
+      "filename": "Archivo-Variable.ttf",
+      "license": "archivo-OFL.txt",
+      "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053"
+    },
+    {
+      "family": "space-mono",
+      "source": "https://github.com/google/fonts/tree/main/ofl/spacemono",
+      "filename": "SpaceMono-Regular.ttf",
+      "license": "space-mono-OFL.txt",
+      "sha256": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18"
+    }
+  ],
+  "process": "Original scenes generated using built-in image_gen. Text and marks composited deterministically using bundled fonts, SVG paths, resvg, and Pillow. No generated readable text is relied upon.",
+  "derivatives": {
+    "hero": "Optimized desktop image and portrait crop; crisp paired-arrow patch composited onto the existing blank upper-back panel.",
+    "posters": "Cropped scenes, contrast gradients, outlined headline typography, live small labels, vector logos. Raw scenes remain unchanged."
+  },
+  "generation_notes": [
+    "assets/art/source/provenance-hero-power.md",
+    "assets/art/source/provenance-posters.md"
+  ]
+}

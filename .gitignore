@@ -1,0 +1,7 @@
+.DS_Store
+.vercel/
+dist/
+/review/
+AI-MAXXI-BRAND-AND-MOVEMENT-PLAN.md
+/research/
+__pycache__/

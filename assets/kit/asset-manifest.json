@@ -1,0 +1,290 @@
+[
+  {
+    "path": "assets/brand/apple-touch-icon.png",
+    "bytes": 1150
+  },
+  {
+    "path": "assets/brand/avatar-frame.png",
+    "bytes": 7376
+  },
+  {
+    "path": "assets/brand/avatar-frame.svg",
+    "bytes": 515
+  },
+  {
+    "path": "assets/brand/avatar.png",
+    "bytes": 3923
+  },
+  {
+    "path": "assets/brand/avatar.svg",
+    "bytes": 411
+  },
+  {
+    "path": "assets/brand/favicon-16.png",
+    "bytes": 198
+  },
+  {
+    "path": "assets/brand/favicon-32.png",
+    "bytes": 268
+  },
+  {
+    "path": "assets/brand/favicon-48.png",
+    "bytes": 352
+  },
+  {
+    "path": "assets/brand/favicon.ico",
+    "bytes": 808
+  },
+  {
+    "path": "assets/brand/icon-192.png",
+    "bytes": 1148
+  },
+  {
+    "path": "assets/brand/icon-512.png",
+    "bytes": 3923
+  },
+  {
+    "path": "assets/brand/lockup-horizontal-black.png",
+    "bytes": 23101
+  },
+  {
+    "path": "assets/brand/lockup-horizontal-black.svg",
+    "bytes": 964
+  },
+  {
+    "path": "assets/brand/lockup-horizontal-orange.png",
+    "bytes": 21289
+  },
+  {
+    "path": "assets/brand/lockup-horizontal-orange.svg",
+    "bytes": 964
+  },
+  {
+    "path": "assets/brand/lockup-horizontal-white.png",
+    "bytes": 22775
+  },
+  {
+    "path": "assets/brand/lockup-horizontal-white.svg",
+    "bytes": 964
+  },
+  {
+    "path": "assets/brand/lockup-stacked-black.png",
+    "bytes": 27211
+  },
+  {
+    "path": "assets/brand/lockup-stacked-black.svg",
+    "bytes": 980
+  },
+  {
+    "path": "assets/brand/lockup-stacked-orange.png",
+    "bytes": 25406
+  },
+  {
+    "path": "assets/brand/lockup-stacked-orange.svg",
+    "bytes": 980
+  },
+  {
+    "path": "assets/brand/lockup-stacked-white.png",
+    "bytes": 26886
+  },
+  {
+    "path": "assets/brand/lockup-stacked-white.svg",
+    "bytes": 980
+  },
+  {
+    "path": "assets/brand/mark-black.png",
+    "bytes": 9074
+  },
+  {
+    "path": "assets/brand/mark-black.svg",
+    "bytes": 344
+  },
+  {
+    "path": "assets/brand/mark-orange.png",
+    "bytes": 9166
+  },
+  {
+    "path": "assets/brand/mark-orange.svg",
+    "bytes": 344
+  },
+  {
+    "path": "assets/brand/mark-small-orange.png",
+    "bytes": 4583
+  },
+  {
+    "path": "assets/brand/mark-small-orange.svg",
+    "bytes": 313
+  },
+  {
+    "path": "assets/brand/mark-white.png",
+    "bytes": 9068
+  },
+  {
+    "path": "assets/brand/mark-white.svg",
+    "bytes": 344
+  },
+  {
+    "path": "assets/brand/og.jpg",
+    "bytes": 164684
+  },
+  {
+    "path": "assets/brand/og.png",
+    "bytes": 994039
+  },
+  {
+    "path": "assets/brand/visor-overlay.png",
+    "bytes": 8585
+  },
+  {
+    "path": "assets/brand/visor-overlay.svg",
+    "bytes": 452
+  },
+  {
+    "path": "assets/brand/wordmark-black.png",
+    "bytes": 26919
+  },
+  {
+    "path": "assets/brand/wordmark-black.svg",
+    "bytes": 773
+  },
+  {
+    "path": "assets/brand/wordmark-orange.png",
+    "bytes": 24924
+  },
+  {
+    "path": "assets/brand/wordmark-orange.svg",
+    "bytes": 773
+  },
+  {
+    "path": "assets/brand/wordmark-white.png",
+    "bytes": 26585
+  },
+  {
+    "path": "assets/brand/wordmark-white.svg",
+    "bytes": 773
+  },
+  {
+    "path": "assets/fonts/Anton-Regular.ttf",
+    "bytes": 170812
+  },
+  {
+    "path": "assets/fonts/Archivo-Variable.ttf",
+    "bytes": 658596
+  },
+  {
+    "path": "assets/fonts/SpaceMono-Regular.ttf",
+    "bytes": 99356
+  },
+  {
+    "path": "assets/fonts/anton-OFL.txt",
+    "bytes": 4484
+  },
+  {
+    "path": "assets/fonts/anton-latin.woff2",
+    "bytes": 25416
+  },
+  {
+    "path": "assets/fonts/archivo-OFL.txt",
+    "bytes": 4388
+  },
+  {
+    "path": "assets/fonts/archivo-latin.woff2",
+    "bytes": 121400
+  },
+  {
+    "path": "assets/fonts/space-mono-OFL.txt",
+    "bytes": 4392
+  },
+  {
+    "path": "assets/fonts/space-mono-latin.woff2",
+    "bytes": 18732
+  },
+  {
+    "path": "assets/kit/ART-PROVENANCE.md",
+    "bytes": 9701
+  },
+  {
+    "path": "assets/kit/BRAND-GUIDE.md",
+    "bytes": 3612
+  },
+  {
+    "path": "assets/kit/COMMUNITY-USE.md",
+    "bytes": 1316
+  },
+  {
+    "path": "assets/kit/PROVENANCE.json",
+    "bytes": 3070
+  },
+  {
+    "path": "assets/kit/poster-night-shift.png",
+    "bytes": 2103659
+  },
+  {
+    "path": "assets/kit/poster-night-shift.webp",
+    "bytes": 145138
+  },
+  {
+    "path": "assets/kit/poster-power.png",
+    "bytes": 2202947
+  },
+  {
+    "path": "assets/kit/poster-power.webp",
+    "bytes": 136078
+  },
+  {
+    "path": "assets/kit/poster-transmission.png",
+    "bytes": 2076461
+  },
+  {
+    "path": "assets/kit/poster-transmission.webp",
+    "bytes": 131046
+  },
+  {
+    "path": "assets/kit/social-banner.png",
+    "bytes": 1113490
+  },
+  {
+    "path": "assets/kit/template-capacity.png",
+    "bytes": 41194
+  },
+  {
+    "path": "assets/kit/template-capacity.svg",
+    "bytes": 2220
+  },
+  {
+    "path": "assets/kit/template-capacity.webp",
+    "bytes": 25552
+  },
+  {
+    "path": "assets/kit/template-transmission.png",
+    "bytes": 44210
+  },
+  {
+    "path": "assets/kit/template-transmission.svg",
+    "bytes": 2077
+  },
+  {
+    "path": "assets/kit/template-transmission.webp",
+    "bytes": 24066
+  },
+  {
+    "path": "assets/art/hero-desktop.webp",
+    "bytes": 210738
+  },
+  {
+    "path": "assets/art/hero-mobile.webp",
+    "bytes": 156268
+  },
+  {
+    "path": "assets/art/night-shift.webp",
+    "bytes": 183254
+  },
+  {
+    "path": "assets/art/power.webp",
+    "bytes": 179806
+  },
+  {
+    "path": "assets/art/transmission.webp",
+    "bytes": 178462
+  }
+]
