@@ -1,9 +1,7 @@
 # The AI Maximalist Manifesto
 ## For Abundant Intelligence and More Life
 
-**AI/MAXXI · Founding text · Draft v2 · September 27, 2026**
-
-Editorial draft. Unpublished.
+**AI/MAXXI · Founding text · First edition · September 27, 2026**
 
 ## The opening act
 
@@ -187,7 +185,7 @@ We choose a future with more intelligence, more agency, and more life.
 
 ## Endnotes and annotated bibliography
 
-These primary texts document the arguments discussed above. Their inclusion establishes neither agreement with this manifesto nor endorsement of AI/MAXXI. Normative commitments elsewhere in the text are the proposed doctrine's own.
+These primary texts document the arguments discussed above. Their inclusion establishes neither agreement with this manifesto nor endorsement of AI/MAXXI. Normative commitments elsewhere in the text are the doctrine's own.
 
 [^1]: **Francis Bacon, *New Atlantis* (1627).** [Primary text](https://www.gutenberg.org/files/2434/2434-h/2434-h.htm), especially the account of Salomon's House. The institutional program connects inquiry to practical inventions; its restricted disclosures and social hierarchy also mark the distance from this manifesto's openness and agency commitments.
 
@@ -213,4 +211,4 @@ These primary texts document the arguments discussed above. Their inclusion esta
 
 [^12]: **Future of Life Institute, “Pause Giant AI Experiments: An Open Letter” (March 22, 2023).** [Original letter](https://futureoflife.org/open-letter/pause-giant-ai-experiments/), request for a six-month training pause and proposed government intervention if necessary. Its specified threshold was systems more powerful than GPT-4. The argument above addresses that proposal rather than attributing a blanket opposition to all AI to its signatories.
 
-[^13]: **Geoffrey Woo, founding AI/MAXXI post (September 26, 2026).** [Original post](https://x.com/geoffwoo/status/2103746556369543673). Establishes the project's maximalist repetition, infrastructure ambitions, and memetic voice. This draft develops its philosophical commitments while preserving the post as the historical starting point; neither text is evidence of a realized technical capability.
+[^13]: **Geoffrey Woo, founding AI/MAXXI post (September 26, 2026).** [Original post](https://x.com/geoffwoo/status/2103746556369543673). Establishes the project's maximalist repetition, infrastructure ambitions, and memetic voice. This manifesto develops its philosophical commitments while preserving the post as the historical starting point; neither text is evidence of a realized technical capability.

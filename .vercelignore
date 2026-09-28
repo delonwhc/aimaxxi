@@ -13,4 +13,8 @@ deploy.py
 *.pfx
 auth.json
 credentials.json
-docs
+docs/*
+!docs/manifesto
+docs/manifesto/*
+!docs/manifesto/AI-MAXIMALIST-MANIFESTO.md
+!docs/manifesto/PRINCIPLES-AND-PRACTICE.md

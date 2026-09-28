@@ -1,6 +1,6 @@
 # AI Maximalism: Principles and Practice
 
-*Draft v2 — September 27, 2026. Unpublished.*
+*First edition — September 27, 2026.*
 
 AI/MAXXI is the public expression of AI maximalism. This charter distills the manifesto into ten commitments, followed by twelve lines to carry forward and a bridge from principle to participation.
 

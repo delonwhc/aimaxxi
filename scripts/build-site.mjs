@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir, rm } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { publishAssets, publishRegularFile, validateHttpsURL } from './security.mjs';
+import { publishManifesto } from './render-manifesto.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(await readFile(path.join(root, 'site.config.json'), 'utf8'));
@@ -44,8 +45,6 @@ for (const file of ['index.html', 'icon.png', 'favicon.png', 'lockup.png', 'hero
 }
 await publishAssets(root, dist, publicAssets);
 await writeFile(path.join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${config.url}/sitemap.xml\n`);
-await writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${config.url}/</loc></url></urlset>\n`);
-console.log('Built static site in dist/. No server or runtime dependencies.');
 
 const displayDate = value => new Date(value).toLocaleString('en-US', {timeZone: 'America/Los_Angeles', dateStyle: 'long', timeStyle: 'long'});
 if (mission.status === 'active' && (!mission.startsAt || !mission.endsAt || !/^https:\/\/x\.com\/AntiHunterAI\/status\/\d+$/.test(mission.launchPost || ''))) throw new Error('Active mission requires verified launch receipt and dates');
@@ -60,4 +59,7 @@ const missionHTML = (await readFile(path.join(root, 'src/mission.html'), 'utf8')
 const missionDir = path.join(dist, 'missions/make-the-future-tangible');
 await mkdir(missionDir, {recursive: true}); await writeFile(path.join(missionDir,'index.html'),missionHTML);
 await writeFile(path.join(dist,'mission.json'), JSON.stringify(mission,null,2));
-await writeFile(path.join(dist,'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${config.url}/</loc></url><url><loc>${config.url}/missions/make-the-future-tangible</loc></url></urlset>`);
+const manifestoURLs = await publishManifesto(root, dist, config);
+const publicURLs = [`${config.url}/`, `${config.url}/missions/make-the-future-tangible`, ...manifestoURLs];
+await writeFile(path.join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${publicURLs.map(url => `<url><loc>${escapeHTML(url)}</loc></url>`).join('')}</urlset>\n`);
+console.log('Built static site in dist/. No server or browser runtime dependencies.');

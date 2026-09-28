@@ -1,13 +1,13 @@
-# AI/MAXXI founding doctrine — review package
+# AI/MAXXI founding doctrine
 
-**Draft v2 · September 27, 2026 · Unpublished**
+**First edition · September 27, 2026**
 
 ## Read
 
 1. [The AI Maximalist Manifesto — For Abundant Intelligence and More Life](AI-MAXIMALIST-MANIFESTO.md): **3,025 words**, followed by thirteen numbered endnotes forming an annotated bibliography. The argument develops AI maximalism as an independent movement for pursuing AGI and expanding life, agency, and access.
 2. [Principles and Practice](PRINCIPLES-AND-PRACTICE.md): a **469-word charter** retaining the ten commitments; **twelve slogans** mapped to those commitments; and a practical mapping to the six existing pillars and the Build/Imagine mission tracks.
 
-The manifesto extends the [September 26 founding post](https://x.com/geoffwoo/status/2103746556369543673). That post remains the historical starting point. These documents are proposed doctrine for review, with no claim that the movement has formally adopted them.
+The manifesto extends the [September 26 founding post](https://x.com/geoffwoo/status/2103746556369543673). That post remains the historical starting point. These documents state the developed doctrine, approved for website publication after the v2 editorial review.
 
 ## Editorial decisions
 
@@ -22,14 +22,18 @@ The manifesto extends the [September 26 founding post](https://x.com/geoffwoo/st
 
 The first draft received an independent source review of the historical genealogy, bibliography, and descriptions of opponents, plus an editorial review of the argument. V2 retains the source record and substantive commitments while revising the voice throughout. A further independent editorial read checked the revised argument and confirmed that openness, agency, risk intervention, correction, and participation commitments remain intact.
 
-V2 gives the history a continuous intellectual arc, replaces the repeated implementation-style paragraphs with declarative principles, and moves essential definitions and qualifications into their relevant arguments. Principle headings and slogans now use the same language across the package. The closing carries the movement's ambition; evidence requirements are established in the body. V1 remains available in local Git history at `88bf750`.
+V2 gives the history a continuous intellectual arc, replaces the repeated implementation-style paragraphs with declarative principles, and moves essential definitions and qualifications into their relevant arguments. Principle headings and slogans now use the same language across the package. The closing carries the movement's ambition; evidence requirements are established in the body. V1 remains available in Git history at `88bf750`.
 
 The thirteen notes distinguish twelve intellectual sources from the original founding post. Good's original reprint bears 1965 while the publisher's online metadata gives 1966; note 6 records both and follows the reprint. Condorcet is identified separately from his 2004 translator, Keith Michael Baker. The founding post's date and “transmission layer” phrase were verified in the browser during the planning work.
 
-Length checks exclude titles, draft metadata, and endnotes from the manifesto, but include its section headings. The charter count includes its ten principle titles and opening/closing prose; numerical labels are excluded. Apostrophe-, slash-, and hyphen-joined words count as one. Other editors may return slightly different counts; both texts are within the approved ranges.
+Length checks exclude titles, edition metadata, and endnotes from the manifesto, but include its section headings. The charter count includes its ten principle titles and opening/closing prose; numerical labels are excluded. Apostrophe-, slash-, and hyphen-joined words count as one. Other editors may return slightly different counts; both texts are within the approved ranges.
 
 All ten principle titles and their order match across the manuscript and charter. All numbered note references resolve. The twelve slogans map to valid principles. Each existing pillar and both participation tracks have a concrete contribution example.
 
-## Publication boundary
+## Publication
 
-This package changes writing under `docs/manifesto/` only. It does not change the website, mission data, token information, build, or asset manifest. Nothing has been pushed, posted, or deployed. Website publication is a subsequent step after review.
+The static build renders the approved Markdown sources into [the manifesto](https://aimaxxi.com/manifesto) and [principles and practice](https://aimaxxi.com/manifesto/principles). Section links, numbered endnotes with return links, the charter, slogans, and pillar mapping work without JavaScript. Both pages offer the corresponding Markdown download. The homepage links to the manifesto; the original founding post remains separately linked.
+
+Only these two manuscripts are selected for publication. This editorial README and other research remain outside the deployed output. The renderer disables raw HTML and permits validated HTTPS citations and generates local section/endnote links. The existing content security policy and explicit asset manifest remain in effect.
+
+Release uses the protected Git pull request and Vercel workflow. Production promotion follows successful build, tests, responsive reading checks, and preview verification. The prior deployment remains available for rollback.
