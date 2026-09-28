@@ -1,158 +1,185 @@
 # The AI Maximalist Manifesto
 ## For Abundant Intelligence and More Life
 
-**AI/MAXXI · Founding text · Draft v1 · September 27, 2026**  
-Prepared for editorial review. Not adopted or published. Develops the original founding post; does not replace its historical record.
+**AI/MAXXI · Founding text · Draft v2 · September 27, 2026**
+
+Editorial draft. Unpublished.
 
 ## The opening act
 
-We want to build general intelligence. We want it to help cure disease, accelerate discovery, make useful things abundant, and give more people the means to shape their own lives. We want machines that expand the reach of thought and carry its consequences into the physical world. We want a civilization whose ambitions exceed the maintenance of its present arrangements.
+Civilization is an unfinished invention.
+
+We inherit its discoveries and its limitations: lives shortened by disease, talents stranded without opportunity, questions beyond our instruments, worlds beyond our reach. We intend to enlarge what is possible. We want more time to live, more power to create, and more minds able to take part in the work of civilization.
+
+We want a scientist to pursue questions that once required an institution. An artist to give form to a world that once required an industry. A child to encounter a patient teacher in any language. A person whose life is consumed by necessary drudgery to recover hours that belong to them. We want discovery to move faster and its fruits to travel farther.
+
+For these purposes, we choose to build general intelligence.
 
 **AGI is the opening act.**
 
-AI maximalism is the commitment to expanding intelligence, agency, and the possibilities of life as far as ingenuity and the physical world permit. AI/MAXXI is its public cultural expression: a flag for people who build, investigate, imagine, and make the future contagious. We aspire to be the most maximalist movement for this project. That is a declaration of ambition, open to competition.
+AI maximalism is the commitment to expanding intelligence, agency, and the possibilities of life. AI/MAXXI is its public expression: a movement of builders, researchers, artists, and people determined to become authors of the future.
 
-Our central proposition is that creating powerful intelligence and distributing the ability to use it belong to the same civilizational undertaking. A breakthrough becomes a fuller achievement when more people can learn from it, build with it, challenge it, and benefit from it. Intelligence should multiply the authors of the future.
+Our mandate is to advance two frontiers together: **what intelligence can do, and who can wield it.** Create greater capabilities. Put them in more hands. Give those hands the tools, energy, freedom, and knowledge to make something of them. The ambition extends from a discovery in a laboratory to a capability within an ordinary person's reach.
 
-We favor faster research, faster construction, and faster diffusion of useful capabilities. Time matters because the possibilities we fail to develop remain unavailable to the people who could use them. Urgency should move resources, clear needless obstacles, and bring more people into the work.
+We seek the most expansive program of intelligent civilization we can build: more capable minds, more productive machines, more abundant energy, longer and richer lives, and participation on a scale worthy of the technology. We favor faster research, faster construction, and faster diffusion. There are possibilities worth bringing into the world, and people alive now who deserve the chance to inhabit them.
 
-We use *AGI* to mean machine intelligence able to learn, reason, and carry out a broad range of unfamiliar intellectual tasks, transferring competence across domains with limited task-specific reengineering. This is a working definition, not an announcement that a particular system has arrived. Consciousness concerns experience; superintelligence concerns capabilities substantially exceeding human performance across domains. Neither follows simply from calling a system AGI.
+Our values are explicit: life, freedom, discovery, and the expansion of agency. Our wager is that intelligence can help us advance discovery itself. Our obligation is to turn that possibility into work whose results can be examined. The future remains contingent. We mean to participate in deciding it.
 
-Our argument makes three kinds of commitment. Life, freedom, and wider agency are values we defend. The proposition that AI can accelerate discovery is a research hypothesis whose strength depends on evidence. The claim that this possibility deserves an ambitious program of construction is a political and moral judgment. We will argue for that judgment openly. Physics cannot sign our manifesto for us.
+**More intelligence. More agency. More life.**
 
-Maximalism describes the breadth of our ambition. It does not supply a single numerical score into which every person, preference, and consequence must disappear. We seek more possibilities for more lives, including lives that choose different purposes from ours.
+## The long project
 
-## An inheritance we choose
+We draw from a long project: the effort to turn knowledge into an enlargement of human possibility. Its thinkers disagreed about institutions, authority, and the good life. We choose from that inheritance and take responsibility for the synthesis.
 
-This project has intellectual ancestors, but no inherited certificate of correctness. We choose a lineage from arguments that help explain our purpose. These authors did not endorse AI/MAXXI, and their disagreements remain their own.
+In Francis Bacon's *New Atlantis* of 1627, organized inquiry becomes practical power: instruments, agriculture, medicine, and invention.[^1] Condorcet's vision of progress connects improvements in human capacity with diminished inequalities within and between nations, while qualifying predictions by the evidence available to them.[^2] Together, these ideas give us a demanding question: how can knowledge improve life, and how widely can that improvement extend?
 
-In *New Atlantis*, published in 1627, Francis Bacon imagined organized investigation turning knowledge into practical powers: better agriculture, medicine, instruments, and inventions. We inherit that demand for useful discovery while leaving his island's hierarchy and secrecy in its historical setting.[^1] Condorcet's account of future progress joined improvement in human capacities to diminished inequalities within and between nations. He also qualified prediction by the evidence available to it. Ambition and intellectual discipline can share a page.[^2]
+The tools of thought bring this project closer to its own foundations. Vannevar Bush's 1945 memex proposal imagines new ways to retrieve and connect accumulated knowledge.[^3] Douglas Engelbart's 1962 framework treats people, language, methods, training, and computers as a system for enlarging problem-solving capacity.[^4] The object of improvement now includes the means by which we think and work together.
 
-Vannevar Bush's 1945 memex proposal explored how people might retrieve and connect accumulated knowledge.[^3] Douglas Engelbart's 1962 framework made the larger system explicit: people, language, methods, training, and tools working together to increase problem-solving capability.[^4] Their relevance is practical. A stronger model matters more when people can turn its capabilities into understanding and action.
+Machine intelligence opens another prospect. The 1955 Dartmouth proposal makes learning, abstraction, language, and self-improvement objects of a research program.[^5] I. J. Good explores how a machine superior at intellectual work might improve machine design itself, explicitly confronting the importance of control.[^6] Intelligence that assists in creating further intelligence could change the pace of discovery. The scale and shape of that possibility remain questions for research.
 
-The 1955 Dartmouth proposal approached machine intelligence as a research conjecture, including learning, abstraction, language, and self-improvement.[^5] I. J. Good subsequently explored the possibility that machines superior at intellectual work could improve machine design itself. His argument also included the problem of control.[^6] Recursive improvement is a reason to investigate intensely. Its speed, scope, and consequences still require investigation.
+Transhumanism extends the ambition toward longer lives, greater capacities, and possible future artificial minds, while recognizing serious risks.[^7] Extropy's proactionary principle brings foregone opportunities into the assessment of technological choices.[^8] Effective accelerationism, or e/acc, and contemporary techno-optimism give technological expansion a confident cultural voice.[^9][^10] AI maximalism carries that confidence into an independent doctrine organized around life and agency.
 
-Transhumanism supplies a vocabulary for extending human potential and considering future artificial minds; its declaration also recognizes serious risks.[^7] Extropy's proactionary principle asks decision-makers to count the costs of restrictions and opportunities forgone.[^8] Contemporary effective accelerationism (e/acc) and techno-optimism give technological ambition an assertive public voice.[^9][^10] We share their appetite for construction and reject the idea that hope must speak apologetically.
-
-Our synthesis makes its own commitments. Thermodynamic descriptions do not establish moral obligations. More computation does not automatically produce more freedom. Wider prosperity needs institutions and participation as well as invention. We choose life and agency as purposes, and engineering-led acceleration as a means. This inheritance is a workshop: take up a useful tool, examine its assumptions, improve it.
+We inherit the ambition to transform our conditions. We choose broad participation, freedom of inquiry, and the power to contest authority. Those commitments require their own defense; a description of thermodynamics cannot establish them. Our intellectual inheritance supplies questions, arguments, and tools. What we build with them is ours to answer for.
 
 ## Ten principles
 
 ### 1. Civilization is unfinished
 
-The conditions into which people are born are starting points for inquiry. Disease, exhaustion, isolation, and the limits of present knowledge deserve efforts to overcome them. Longer healthy lives, richer understanding, new art, and exploration beyond Earth are legitimate civilizational ambitions.
+The present is an arrangement we can improve. Its familiar constraints deserve investigation: the diseases we endure, the labor we repeat, the knowledge we cannot yet reach. We affirm the ambition to overcome them. Longer healthy lives, new forms of art, deeper understanding, and life beyond Earth belong within the horizon of serious human effort.
 
-This is a moral orientation, not a prediction that every ambition will succeed. We owe present people attention alongside future possibilities; an imagined cosmic destiny cannot excuse treating today's lives as disposable. We should enlarge the range of worthwhile futures people can pursue.
+The people living through the transition matter as much as the grandeur of the destination. A worthy future gives them more possibilities, including purposes that differ from ours. We want flourishing in its variety: discovery and friendship, invention and leisure, exploration and a place to call home.
 
-In practice, ask what a project makes possible and for whom. Work on problems large enough to matter. Give people reasons to desire the world being proposed. Progress should have inhabitants, with time to enjoy being alive.
+Choose problems large enough to justify the intelligence brought to bear on them. Make the desired future concrete enough to discuss and inviting enough to help construct. **The future should have more authors.**
 
-### 2. Pursue general intelligence
+### 2. Build general intelligence
 
-Building AGI should be an explicit, sustained objective. We favor research, experimentation, and deployment that advance broad, adaptable competence. We want systems that can learn new tasks, collaborate across disciplines, and help people carry demanding projects through to completion.
+We make the creation of AGI an explicit civilizational objective. By AGI, we mean machine intelligence able to learn, reason, and carry out a broad range of unfamiliar intellectual tasks, transferring competence across domains with limited task-specific reengineering. It is a working definition for a research ambition. Consciousness concerns experience; superintelligence concerns capabilities substantially exceeding human performance across domains. These are distinct questions.
 
-No laboratory owns this ambition. No architecture deserves permanent allegiance. A benchmark can provide evidence about a capability without becoming a referendum on the whole future. Claims of generality should survive unfamiliar tasks, independent examination, and accounts of where the system fails.
+Pursue the architectures, experiments, and discoveries that advance general capability. Build systems able to help carry difficult projects from intention to completion. Let competing approaches flourish, and let demonstrations face unfamiliar tasks and independent scrutiny.
 
-In practice, support competing approaches and publish meaningful demonstrations. State what the machine did, what the human supplied, and what remains unreliable. Pursue stronger capabilities beyond any first AGI milestone. A civilization-scale research program should have a larger horizon than a product launch.
+No laboratory owns this objective. Progress can come from a major institution, an independent researcher, or an approach today's consensus dismisses. Our allegiance is to the expansion of capability and what it makes possible. The first credible AGI milestone should open a larger field of work. Keep building.
 
-### 3. Improve the machinery of discovery
+### 3. Accelerate discovery itself
 
-Intelligence is especially consequential when it helps improve our ability to discover. AI could assist with hypotheses, proofs, experiments, engineering design, and the development of better AI. Success here could affect the rate at which other problems become tractable.
+The deepest promise of AI is the possibility of improving how discovery happens. Systems that help formulate hypotheses, design experiments, prove results, engineer machines, and improve intelligence could influence progress across many fields. We want better tools for inventing better tools.
 
-The possibility is powerful; the result is conditional. Better proposals still need verification. Scientific instruments, experimental feedback, data quality, and physical production can constrain progress. Self-improvement may encounter obstacles that confident diagrams omit.
+This is the research wager at the heart of AI maximalism. Its importance warrants sustained effort; its uncertainty demands experiments. A persuasive answer still has to survive contact with mathematics, instruments, materials, and the world. Physical feedback and reliable verification will help determine how far the process can go.
 
-In practice, build and evaluate tools that shorten the distance between a question and a reliable answer. Report time, cost, error, and reproducibility where these can be measured. Celebrate an experiment that exposes a limitation as a contribution to discovery. An impressive answer is an invitation to check the work.
+Shorten the distance between a question and a trustworthy answer. Build laboratories and software that let more ideas be tested. Make discoveries reproducible and failures informative. A tool that helps thousands of people investigate independently enlarges both the reach of intelligence and the community that can direct it.
 
-### 4. Intelligence should enlarge agency
+### 4. Multiply agency
 
-The measure of our ambition includes what people can actually choose and do. A powerful system should help someone understand a decision, create something, challenge an institution, or recover time. Its owner gaining more control over everyone else is insufficient.
+Intelligence fulfills our purpose when it expands what people can understand, choose, and accomplish. Give a person the ability to make a film, question a diagnosis, establish an enterprise, challenge an institution, or recover an afternoon. Let more lives contain the experience of authorship.
 
-We defend consent, privacy, freedom of inquiry, and meaningful alternatives to unwanted automation. People may value human care, manual craft, solitude, or a day without optimization. Their freedom belongs inside an abundant future. So does serious inquiry into whether future synthetic beings could have experiences and moral claims. This manifesto asserts no finding of consciousness in current systems.
+Agency requires consent, privacy, freedom of inquiry, and meaningful exit. People must be able to question systems, change providers, revoke delegations, and refuse unwanted automation. They may prefer human care, manual craft, or a day without optimization. An abundant civilization has room for those choices.
 
-In practice, design for user control, understandable limits, and exit. Let delegation remain accountable to the person delegating. Automate the paperwork. Leave room for the picnic.
+We also take seriously the possibility that future synthetic beings could have experiences and moral claims. Their status deserves inquiry rather than assumption; this manifesto makes no finding of consciousness in current systems. Our ambition for life should remain capable of recognizing forms it has not yet encountered.
 
-### 5. Abundance must be built
+**Intelligence should multiply the authors of the future.**
 
-Intelligence needs a material civilization: chips, electricity, networks, laboratories, supply chains, workshops, and people who know how to maintain them. Useful robots must work in actual environments. Medical discoveries must survive testing and reach patients. An idea becomes abundance through many kinds of labor and coordination.
+### 5. Build abundance
 
-We favor expanding energy and productive capacity, including nuclear power, solar power, storage, and the grids that make supply usable. We also favor efficiency, reliability, and reducing harmful environmental burdens. The objective is useful capability people can afford and sustain.
+Abundance is a project of construction. It takes chips and electricity, networks and laboratories, factories and supply chains, useful robots and people who can maintain them. An insight becomes a medicine through experiments, production, and delivery. A design becomes a home when materials, skills, and institutions bring it into the world.
 
-In practice, connect software ambition to physical constraints and access. Build infrastructure, improve manufacturing, reduce waste, and make useful services easier to obtain. A civilization cannot run on announcement threads. Publish the paper. Build the power plant.
+We favor more energy and productive capacity: nuclear power, solar power, storage, grids, and the engineering that makes them reliable. Pursue efficiency, reduce harmful environmental burdens, and make useful goods and services more affordable. We want the power to do more with the world while making it a better place to live.
+
+Build across the distance between invention and everyday use. Improve the machine, the process, and the terms of access. **Abundance is achieved when a new possibility becomes an ordinary freedom.**
+
+Publish the paper. Build the power plant.
 
 ### 6. Open by default
 
-Access to intelligence should be broad enough to support independent thought and independent enterprise. We favor open research, open weights, usable documentation, affordable tools, interoperability, and competition. People should be able to inspect, adapt, and challenge the systems that increasingly shape their options.
+Intelligence should become a widely available capacity of civilization. Open research and open weights, usable documentation, affordable tools, interoperability, and competition enlarge the number of people able to learn, adapt, and build. They also create opportunities to inspect powerful systems and contest the choices embedded in them.
 
-Openness is a strong presumption with responsibilities. Credible evidence that releasing a particular capability would enable severe harm can justify a narrow exception. Such restrictions need an intelligible rationale, review, and reconsideration as conditions change. Permanent enclosure should not acquire scientific authority through repetition.
+We favor a world in which a newcomer can contribute without first securing an incumbent's permission. Independent researchers, small enterprises, public institutions, cooperatives, and individuals all have roles in expanding what intelligence can do.
 
-In practice, release what can responsibly be released, explain consequential limitations, and reduce barriers to participation. Scrutinize licensing demands that protect incumbents more effectively than people. The future should have more builders than gatekeepers.
+Openness remains a strong presumption with a demanding exception: credible evidence of severe harm can justify restricting a particular capability. Explain the mechanism, limit the scope, and subject the restriction to review as conditions change. Scrutinize rules that turn today's leading institutions into tomorrow's permanent gatekeepers.
+
+The frontier advances when more people can work on it. Open the weights. Widen the invitation.
 
 ### 7. Count the costs of delay
 
-Every choice has a counterfactual. A delayed tool can mean lost opportunities to learn, produce, or help. Restrictions can prevent harm and can also preserve harmful conditions. The proactionary tradition is useful because it asks us to bring these consequences into the same discussion.[^8]
+Time is part of the moral question. A capability developed sooner may give someone more years of health, more productive hours, or a chance to attempt something previously beyond reach. Delayed progress has opportunity costs. The proactionary tradition asks us to include them when evaluating restrictions.[^8]
 
-This does not give us permission to invent a miraculous cure behind every postponed training run. Foregone benefits vary in credibility, scale, and timing, just as projected harms do. Compare action, delay, and alternative interventions under explicit uncertainty.
+We must compare the consequences of action, delay, and targeted alternatives with equal seriousness. A hypothetical benefit deserves scrutiny, as does a hypothetical catastrophe. Each rests on assumptions about mechanisms, timing, and scale. Neither acquires certainty through repetition.
 
-In practice, ask what a restriction would accomplish, what it would cost, and what less restrictive measures could achieve. Ask builders corresponding questions about what they expose others to. Stagnation needs an argument too. Existing suffering does not become acceptable merely because it is familiar.
+Ask what a restriction prevents, what it postpones, and whether a narrower intervention would work. Ask builders what risks they impose on others and how those risks can be reduced. Bring the entire choice into view.
 
-### 8. Make progress resilient
+**Stagnation needs an argument too.** Familiar suffering deserves the same determination we bring to unfamiliar danger.
 
-Advancing powerful technology brings responsibilities for security, evaluation, controllability, and correction. We want systems and institutions capable of detecting failures and responding before those failures become disasters. Work that makes useful deployment more reliable advances the project.
+### 8. Make progress endure
 
-Credible evidence of severe danger can warrant targeted limits, staged deployment, or stopping a particular activity. Evidence need not wait for casualties. Interventions should address identifiable mechanisms, remain proportionate, and be revisited. An indefinite veto on development also demands scrutiny, especially when its conditions for ending are impossible to satisfy.
+We build for a long future. Security, controllability, evaluation, and correction help powerful capabilities survive contact with the world. A system that can be trusted with useful work expands the field of action. An institution that learns from failure gives the next advance firmer ground.
 
-In practice, test dangerous failure modes, secure systems, establish responsibility, and preserve ways to intervene. Publish enough evidence for criticism without advertising exploitable details. We intend to build at civilization scale. Engineering competence is part of the ambition.
+The duty grows with the capability. Investigate dangerous failure modes, secure systems, establish responsibility, and preserve effective means of intervention. Share evidence that enables scrutiny while protecting details that would directly enable exploitation.
 
-### 9. Conviction must remain corrigible
+Credible evidence of severe danger can warrant staged deployment, targeted limits, or stopping a particular activity before anyone is harmed. Such measures should address identifiable mechanisms, remain proportionate, and be revisited. Permanent vetoes and demands for impossible certainty also require challenge.
 
-We are committed to the project and willing to revise our beliefs about how it works. A forecast should have conditions under which it changes. A demonstration should distinguish observations from interpretation. A failure should leave behind knowledge that another builder can use.
+Our ambition includes the competence to sustain what we create. Build quickly, learn honestly, and make the next step stronger. A civilization-scale project needs more than a spectacular first demonstration.
 
-The same standard applies to our preferred stories. Optimistic exaggeration becomes deception when represented as evidence. A founder's confidence does not settle a technical question. Neither does a rising token price.
+### 9. Reality has the final word
 
-In practice, credit criticism, record corrections, and make important claims inspectable. Welcome disagreement that improves the work. Membership requires no loyalty to a vendor, personality, arrival date, or fashionable theory. Strong convictions. Updateable weights. Anyone proposing an infallible movement has already supplied its first counterexample.
+Conviction gives us a direction. Evidence tells us whether we are advancing. State what a system did, what a person supplied, and where it failed. Give a claimed improvement a unit and a baseline. Let forecasts name the conditions under which they would change.
 
-### 10. Culture helps construct the future
+We owe this discipline to our own hopes. An exciting narrative can mislead as effectively as a frightening one. A founder's confidence cannot settle a technical question. A token price cannot validate a philosophy. Claims must remain answerable to something beyond the enthusiasm of the people making them.
 
-A movement needs people who can make possibilities understandable and desirable. Art, stories, jokes, and symbols can invite participation before someone has read the technical literature. AI/MAXXI uses deliberate excess to enlarge the space of imaginable ambition. The original founding post called memes the transmission layer.[^13]
+Credit criticism. Record corrections. Leave behind enough knowledge for another person to reproduce, challenge, or improve the work. An independent mind strengthens the movement by remaining independent.
 
-The joke should survive contact with the argument. We can ridicule bureaucratic self-importance, compulsory pessimism, and our own tendency to overbuild a kettle. A fabricated demonstration remains fabricated even when the caption is funny.
+**Strong convictions. Updateable weights.** Anyone announcing that our doctrine has become infallible has volunteered to be its next debugging exercise.
 
-In practice, make original work, credit collaborators, label imagined capabilities, and give interested people somewhere useful to go next. Let the meme lead to a tool, an experiment, an explanation, or another creator. The future has entered peer review. Please attach a prototype.
+### 10. Make the future contagious
 
-## Objections worth answering
+A civilization needs images of what it could become. Art, stories, jokes, and symbols let people encounter an ambition before they master its technical vocabulary. They can turn an unfamiliar possibility into a desire to participate. The founding AI/MAXXI post called memes the transmission layer.[^13]
 
-**Powerful AI could enable catastrophic misuse or escape effective control.** Serious risk arguments concern capabilities, incentives, security, and the difficulty of controlling increasingly autonomous systems. Bengio and colleagues make a case for stronger research and governance in response to extreme risks.[^11] Their concern cannot be answered by posting a robot with sunglasses. Our answer is to advance useful capabilities alongside the means to evaluate and control their use. Where a particular activity presents credible severe danger, intervention can be justified. We oppose turning uncertainty into a permanent, universal prohibition; uncertainty also does not establish permission for every experiment.
+We embrace excess, wonder, and a functioning sense of humor. Imagine a city coming online, a household with time returned to it, a laboratory with a thousand tireless collaborators. Make the ambition visible. Give it a symbol someone wants to carry.
 
-The hardest case is a capability whose danger becomes clear too late, especially after a release that cannot readily be recalled. Staged access, stronger evaluation, or a specific stop may then be justified. Acceleration can continue through alternative approaches, improved controls, and other useful research. We cannot promise that every conflict between speed, access, and security dissolves on inspection.
+Credit creators. Identify imagined capabilities as imagined. Let people follow the image toward a demonstration, an explanation, a tool, or their own first contribution. Satirize compulsory pessimism, bureaucratic grandeur, and our own tendency to give a kettle a space program.
 
-**Would a pause sometimes be warranted?** The 2023 open letter proposed at least six months of pausing training of systems more powerful than GPT-4, with a government moratorium if a voluntary pause could not be enacted quickly.[^12] It did not demand the abolition of all AI. We question broad pauses because their scope, enforceability, opportunity costs, and effects on concentrated power require justification. A restriction should identify the failure it addresses, the work needed to resolve it, and how reopening will be assessed. Our position permits specific stops while maintaining a strong presumption of advancing the wider project.
+**The future has entered peer review. Please attach a prototype.**
 
-**What if abundance belongs to a handful of companies or states?** Increased output can coexist with dependence and domination. Open models alone cannot remove concentrations in chips, energy, capital, or distribution. Our commitments therefore extend to competition, interoperability, independent research, broad access to infrastructure, and institutions that allow people to challenge power. Public, commercial, cooperative, and individual projects should have room to contribute. A population of permanently captive customers falls short of our ambition for agency.
+## The difficult questions
 
-**What happens to people whose work is displaced?** Losing an income, status, or community can be painful even when aggregate output grows. People living through disruption deserve more than a graph of future prosperity. Our principles support accessible tools, opportunities to learn and build, bargaining power, and institutions that spread gains and support transitions. They do not establish one universal tax or transfer policy. Such policies need evidence and public argument. We should evaluate progress partly by whether affected people gain workable options. Telling someone their displacement is excellent for the civilization dashboard is an unusually efficient way to become insufferable.
+**Power can arrive before control.** Catastrophic misuse and loss of effective control are serious possibilities to investigate. Bengio and colleagues argue for stronger research and governance to address extreme risks.[^11] The difficult case is a capability whose danger becomes clear too late, particularly after a release that cannot readily be recalled. A robot with sunglasses does not resolve it.
 
-**What about energy, materials, and environmental limits?** Intelligence does not repeal thermodynamics. More capable software cannot by itself supply a grid connection, remove a manufacturing bottleneck, or make ecological damage disappear. We support adding productive capacity while measuring resource use and environmental effects, improving efficiency, and addressing concrete harms. Relative efficiency and total consumption are different questions. The aim is a world with more useful capability and better lives; the electricity bill alone cannot establish success.
+Our position supports staged access, stronger evaluation, and specific stops when credible severe danger warrants them. It also supports accelerating alternative approaches, better controls, and useful research elsewhere. Speed, openness, and security can conflict. Those conflicts require decisions supported by evidence, clear responsibility, and a willingness to change course. We remain committed to creating powerful intelligence that can be used and sustained.
 
-These objections belong inside the work. “Decel” names the posture we contest when delay becomes its own purpose, speculative danger becomes an unlimited veto, or access becomes a privilege reserved for approved institutions. “Doomer” is a polemical nickname, not a scientific diagnosis. A researcher who finds a real failure has brought us something valuable. Doom is not a deliverable. A reproducible failure is.
+**Would a broad pause help?** The 2023 open letter called for at least six months of pausing training of systems more powerful than GPT-4, with a government moratorium if a voluntary pause could not quickly be enacted.[^12] Its target was frontier training, not every use of AI. We challenge broad pauses on their scope, enforceability, opportunity costs, and effects on concentrated power. A justified restriction should identify the failure it addresses, the work needed to resolve it, and how reopening will be assessed. Ending an indefinite permission process should not require proving that the future contains no danger.
 
-## From conviction to construction
+**Capability can concentrate power.** More output can coexist with dependence, surveillance, and domination. Open models alone cannot dissolve concentrations in chips, energy, capital, or distribution. The project therefore extends to competition, access to infrastructure, interoperability, and institutions through which people can challenge authority. We welcome commercial, public, cooperative, and individual efforts. The question is whether they give people more effective command over their lives.
 
-The existing six pillars name fields of work. Compute supplies capacity. Intelligence research advances capability. Agents help carry intentions into sustained action. Robots extend useful action into the physical world. Energy makes the system materially possible. Memes give its ambitions a public language. These are connected commitments, with many legitimate ways to contribute.
+**Disruption can damage lives.** Lost income, status, and community are real costs for the people who bear them. A promise of aggregate prosperity is an incomplete answer. We support accessible tools, opportunities to learn and build, bargaining power, and institutions that share gains and make transitions survivable. Specific tax and transfer policies require evidence and public argument. Our commitment is to expand workable options for the people living through change. Calling someone's displacement a victory for the civilization dashboard is an efficient way to become insufferable.
 
-A builder can demonstrate a workflow, improve a model, test a failure mode, or document what a robot can reliably do. An artist can make an imagined future specific enough to discuss. A teacher can make a difficult tool usable. Someone else can translate, reproduce an experiment, or help a newcomer finish a first contribution.
+**The physical world sets terms.** Intelligence does not repeal thermodynamics. Grid connections, manufacturing capacity, materials, and ecosystems require engineering and stewardship. Add productive capacity, measure environmental effects, improve efficiency, and address concrete harms. Relative efficiency and total resource consumption remain separate questions. We seek useful capability and flourishing lives; raw expenditure alone cannot establish either.
 
-The movement's Build and Imagine tracks give these efforts distinct forms: working artifacts with evidence, and original visions identified as such. Both deserve credit. Neither requires a wallet. The associated meme coin is optional cultural participation; ownership grants no philosophical authority, and its market performance cannot validate these principles. Our argument must remain worth making through a market cycle, a failed prediction, and a change of leadership.
+These questions belong to the work. “Decel” names the posture we oppose when delay becomes its own purpose, uncertainty becomes an unlimited veto, or transformative capability becomes a privilege reserved for approved institutions. “Doomer” is a polemical nickname. We welcome the person who identifies a real failure and helps make it tractable.
+
+**Doom is not a deliverable. A reproducible failure is.**
+
+## A civilization to build
+
+The six pillars of AI/MAXXI give this doctrine a material and cultural agenda.
+
+**Maximum compute.** Build capacity and put it within reach. **Maximum intelligence.** Advance what minds and machines can understand. **Maximum agents.** Give people the means to carry intentions into sustained action. **Maximum robots.** Bring useful intelligence into the physical world. **Maximum energy.** Power the civilization we want to inhabit. **Maximum memes.** Give its ambitions a language people can make their own.
+
+Each pillar opens a place to contribute. A researcher can test a hypothesis. A builder can release a tool. A roboticist can demonstrate a useful action. An artist can give a future its first recognizable image. A teacher can make a difficult capability available to someone who would otherwise be excluded. A newcomer can reproduce a result, translate an explanation, or make a strange little film that recruits the next builder.
+
+The Build and Imagine tracks begin with those acts: working artifacts accompanied by evidence, and original visions presented as visions. Credit the work and the people behind it. Make the next contribution easier. A movement becomes durable when its participants acquire the ability to carry it forward.
+
+Participation requires no purchase. The associated meme coin is an optional expression of affiliation; holding it confers no philosophical authority. These commitments must remain worth defending through market cycles, failed forecasts, and changes of leadership. Every person who makes the future more possible has something to bring.
 
 ## More life
 
-We want intelligence that helps people discover what they could not discover, make what they could not make, and choose lives previously beyond their reach. We want civilization's ambitions to grow alongside its competence. We want a future populated by people with enough time, health, freedom, and capability to surprise us.
+We want a world with more minds at work and more lives open to possibility. More discoveries that become useful. More useful things that become affordable. More people with the time and power to pursue purposes of their own. More room for thought, invention, beauty, friendship, and forms of life we have yet to imagine.
 
-We are willing to defend that future in arguments and make it ridiculous in memes. We are also willing to revise a design, abandon a failed hypothesis, and admit when the machine has confidently invented a railway station. Reality retains editorial control.
+That is the scale of the undertaking. AGI opens the question of what civilization can become when intelligence is more capable, more plentiful, and more widely available. We intend to help answer it through construction.
 
-**10x is cowardice.** As a provocation, it asks us to enlarge the ambition. Every claimed improvement still needs a unit, a baseline, and evidence. The scale of the dream can be outrageous. The work must be real.
+Let the ambition be outrageous. Give it foundations, instruments, collaborators, and a working prototype. Make something another person can use. Make something that changes what they believe is possible. Then give them the means to go further.
 
-Build the intelligence. Build the infrastructure. Put capability in more hands. Make the future worth wanting, and give other people the tools to help create it.
+**10x is cowardice.**
 
-Maximum intelligence. Maximum agency. More life.
+Build the datacenters. Build the power plants. Build the chips. Train the models. Ship the robots. Make the art. Open the tools. Multiply the authors.
+
+We choose a future with more intelligence, more agency, and more life.
 
 **MAXX THE FUTURE. ↗↗**
 
